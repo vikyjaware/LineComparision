@@ -23,28 +23,32 @@ namespace LineComputation
             Console.Write("y2=");
             Y2 = Convert.ToInt32(Console.ReadLine());
             double Length1 = Math.Sqrt(Math.Pow(X2 - X1, 2) + Math.Pow(Y2 - Y1, 2));
-            Console.WriteLine(" The length of line is : " + Length1);
+            Console.WriteLine(" The length of Line1 is : " + Length1);
 
-            Console.WriteLine("Enter the Co-ordinates of first point as A(x3,y3) : ");
+            Console.WriteLine("Enter the Co-ordinates of third point as C(x3,y3) : ");
             Console.Write("x3=");
-            X1 = Convert.ToInt32(Console.ReadLine());
+            X3 = Convert.ToInt32(Console.ReadLine());
             Console.Write("y3=");
-            Y1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the Co-ordinates of second point as B(x4,y4) : ");
+            Y3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Co-ordinates of fourth point as D(x4,y4) : ");
             Console.Write("x4=");
-            X2 = Convert.ToInt32(Console.ReadLine());
+            X4 = Convert.ToInt32(Console.ReadLine());
             Console.Write("y4=");
-            Y2 = Convert.ToInt32(Console.ReadLine());
+            Y4 = Convert.ToInt32(Console.ReadLine());
             double Length2 = Math.Sqrt(Math.Pow(X4 - X3, 2) + Math.Pow(Y4 - Y3, 2));
-            Console.WriteLine(" The length of line is : " + Length2);
+            Console.WriteLine(" The length of Line2 is : " + Length2);
 
             if (Length1 == Length2)
             {
                 Console.WriteLine("The length of both the lines is same ");
             }
-            else
+            if (Length1<Length2)
             {
-                Console.WriteLine("The length of both the lines is different ");
+                Console.WriteLine("The length of Line1 is less than the length of Line2 ");
+            }
+            if (Length1 > Length2)
+            {
+                Console.WriteLine("The length of Line1 is greater than the length of Line2 ");
             }
         }
     }
