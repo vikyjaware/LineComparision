@@ -3,5 +3,5 @@ using LineComputation;
 
 Console.WriteLine("Welcome to Line Comparison Computation Program");
 
-LineComparison Lengthcal = new LineComparison();
-Lengthcal.CalculateLength();
+LineComparison Lengthcal = new LineComparison
+Lengthcal.LineCalculation();
